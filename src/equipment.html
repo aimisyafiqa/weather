@@ -1,44 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equipment Management</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="equipment.css">
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <title>Equipment Management</title> <!-- Title of the web page -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="equipment.css"> <!-- Link to custom CSS for styling -->
 </head>
 <body>
     <header>
-        <h1>Equipment</h1>
+        <h1>Equipment</h1> <!-- Main header for the page -->
     </header>
-    <div class="mainWrapper">
+    <div class="mainWrapper"> <!-- Main wrapper for content -->
         <form>
-            <div class="header-with-menu">
+            <div class="header-with-menu"> <!-- Container for menu icon -->
                 <div class="menu-icon">
-                  <i class="fa-solid fa-bars"></i>
-                  <div class="menu-hover">
-                    <a href="index.html">Home</a>
-                    <a href="activity.html">Activities</a>
-                    <a href="equipment.html">Equipment</a>
+                  <i class="fa-solid fa-bars"></i> <!-- Hamburger icon for menu -->
+                  <div class="menu-hover"> <!-- Dropdown menu for navigation -->
+                    <a href="index.html">Home</a> <!-- Link to home page -->
+                    <a href="activity.html">Activities</a> <!-- Link to activities page -->
+                    <a href="equipment.html">Equipment</a> <!-- Link to equipment page -->
                   </div>
                 </div>
             </div><br>
-            <div class="form-group">
-                <label>File Name</label>
-                <input id="fileName" type="text" class="form-control">
+            <div class="form-group"> <!-- Grouping for file name input -->
+                <label>File Name</label> <!-- Label for file name input -->
+                <input id="fileName" type="text" class="form-control"> <!-- Input field for file name -->
             </div>
-            <div class="form-group">
-                <label>Equipment List</label>
-                <textarea id="fileContents" class="form-control" rows="5"></textarea>
+            <div class="form-group"> <!-- Grouping for equipment list textarea -->
+                <label>Equipment List</label> <!-- Label for equipment list -->
+                <textarea id="fileContents" class="form-control" rows="5"></textarea> <!-- Textarea for entering equipment details -->
             </div>
         </form>
-        <button id="btnCreate" class="btn btn-default">Create</button>
-        <button id="btnRead" class="btn btn-default">Read</button>
-        <button id="btnUpdate" class="btn btn-default">Update</button>
-        <button id="btnDelete" class="btn btn-default">Delete</button>
-        
-
+        <!-- Action buttons for file management -->
+        <button id="btnCreate" class="btn btn-default">Create</button> <!-- Button to create a file -->
+        <button id="btnRead" class="btn btn-default">Read</button> <!-- Button to read a file -->
+        <button id="btnUpdate" class="btn btn-default">Update</button> <!-- Button to update a file -->
+        <button id="btnDelete" class="btn btn-default">Delete</button> <!-- Button to delete a file -->
     </div>
-    <script src="equipment.js"></script>
+    <script src="equipment.js"></script> <!-- Link to JavaScript file for functionality -->
 </body>
 </html>

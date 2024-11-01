@@ -1,3 +1,4 @@
+/* Basic styling for the entire page */
 body {
   margin: 0;
   min-height: 100vh;
@@ -5,11 +6,12 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(135deg, #6dd5ed, #2193b0);
+  background-image: linear-gradient(135deg, #6dd5ed, #2193b0); /* Background gradient */
   font-family: 'Arial', sans-serif;
   color: #333;
 }
 
+/* Header styling */
 header {
   text-align: center;
   color: #ffffff;
@@ -18,12 +20,14 @@ header {
   margin-bottom: 20px;
 }
 
+/* Main container styling */
 .container {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
+/* Main content area styling */
 main {
   width: 550px;
   min-height: 500px;
@@ -34,12 +38,14 @@ main {
   text-align: center;
 }
 
+/* Form container styling */
 .form-container {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
+/* Menu icon styling */
 .menu-icon {
   position: relative;
   cursor: pointer;
@@ -50,11 +56,12 @@ main {
   color: #2193b0;
 }
 
+/* Dropdown menu styling */
 .menu-hover {
   display: none;
   position: absolute;
   top: 100%;
-  left: 0; /* Position on the left */
+  left: 0; /* Align dropdown on the left */
   background-color: #ffffff;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
@@ -62,10 +69,12 @@ main {
   z-index: 100;
 }
 
+/* Show dropdown on hover */
 .menu-icon:hover .menu-hover {
   display: block;
 }
 
+/* Dropdown menu link styling */
 .menu-hover a {
   display: block;
   padding: 10px 20px;
@@ -74,10 +83,12 @@ main {
   font-weight: 500;
 }
 
+/* Hover effect for dropdown menu links */
 .menu-hover a:hover {
   background-color: #f0f0f0;
 }
 
+/* Form styling */
 form {
   display: flex;
   background-color: #ffffff;
@@ -88,6 +99,7 @@ form {
   flex: 1;
 }
 
+/* Input styling inside the form */
 form input {
   flex: 1;
   padding: 12px;
@@ -97,6 +109,7 @@ form input {
   color: #333;
 }
 
+/* Button styling inside the form */
 form button {
   background-color: #2193b0;
   border: none;
@@ -107,14 +120,17 @@ form button {
   transition: background 0.3s;
 }
 
+/* Hover effect for button */
 form button:hover {
   background-color: #176c85;
 }
 
+/* Weather result section styling */
 .result {
   margin-top: 25px;
 }
 
+/* City name and icon styling */
 .result .name {
   font-size: 1.5em;
   font-weight: 600;
@@ -124,18 +140,21 @@ form button:hover {
   gap: 10px;
 }
 
+/* Temperature icon styling */
 .temperature img {
   width: 120px;
   margin-top: 15px;
   filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
 }
 
+/* Temperature display styling */
 .temperature figcaption {
   font-size: 2.5em;
   color: #2193b0;
   margin-top: 10px;
 }
 
+/* Weather description styling */
 .description {
   font-size: 1em;
   font-weight: 500;
@@ -143,6 +162,7 @@ form button:hover {
   margin-top: 10px;
 }
 
+/* Weather info list styling */
 ul {
   list-style: none;
   display: grid;
@@ -152,6 +172,7 @@ ul {
   padding: 0;
 }
 
+/* Individual item styling in weather info list */
 li {
   background-color: #2193b0;
   color: #ffffff;
@@ -166,19 +187,23 @@ li {
   transition: background 0.3s;
 }
 
+/* Icon styling in list items */
 li i {
   font-size: 1.5em;
   margin-bottom: 8px;
 }
 
+/* Hover effect for list items */
 li:hover {
   background-color: #176c85;
 }
 
+/* Error animation for error notifications */
 .error {
   animation: errorEffect 0.3s linear 1;
 }
 
+/* Keyframes for error shake animation */
 @keyframes errorEffect {
   0% { transform: translateX(10px); }
   25% { transform: translateX(-10px); }

@@ -4,52 +4,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather Check</title>
+  
+  <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Link to the external CSS file for styling -->
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
+  
+  <!-- Header with the main title of the page -->
   <header>
     <h1>Check Weather Today!</h1>
   </header>
 
+  <!-- Main container to center content -->
   <div class="container">
     <main>
+      
+      <!-- Container for the form and menu icon -->
       <div class="form-container">
+        
+        <!-- Menu icon with hover dropdown for navigation -->
         <div class="menu-icon">
           <i class="fa-solid fa-bars"></i>
           <div class="menu-hover">
+            <!-- Navigation links to different sections/pages -->
             <a href="javascript:void(0)" onclick="seeMoreDetails()">Details</a>
             <a href="activity.html">Activities</a>
             <a href="equipment.html">Equipment</a>
           </div>
         </div>
+        
+        <!-- Form for user to input city name for weather check -->
         <form>
+          <!-- Input for city name -->
           <input type="text" id="name" placeholder="Enter city name" autocomplete="off">
+          <!-- Submit button with search icon -->
           <button type="submit">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </form>
       </div>
       
+      <!-- Section to display weather results -->
       <section class="result" id="weatherResult">
+        
+        <!-- City name and country flag display -->
         <figure class="name">
           <figcaption>City Name</figcaption>
           <img src="" alt="Country Flag">
         </figure>
+        
+        <!-- Temperature display with weather icon -->
         <figure class="temperature">
           <img src="" alt="Weather Icon">
           <figcaption><span>--</span><sup>o</sup>C</figcaption>
         </figure>
+        
+        <!-- Weather description -->
         <p class="description">Description</p>
+        
+        <!-- List of additional weather info such as clouds, humidity, and pressure -->
         <ul>
           <li><span>Clouds</span><i class="fa-solid fa-cloud"></i><span id="clouds">--</span>%</li>
           <li><span>Humidity</span><i class="fa-solid fa-droplet"></i><span id="humidity">--</span>%</li>
           <li><span>Pressure</span><i class="fa-solid fa-gauge"></i><span id="pressure">--</span> hPa</li>
         </ul>
       </section>
+      
     </main>
   </div>
   
+  <!-- External JavaScript file for handling interactivity -->
   <script src="renderer.js"></script>
 </body>
 </html>

@@ -1,136 +1,156 @@
+/* Styles the body element with no margins and centers content both vertically and horizontally */
 body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(135deg, #6dd5ed, #2193b0);
-    font-family: 'Arial', sans-serif;
-    color: #333;
-  }
-  
-  header {
-    text-align: center;
-    color: #ffffff;
-    font-size: 2em;
-    font-weight: 600;
-    margin-bottom: 20px;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  main {
-    width: 550px;
-    min-height: 450px;
-    background-color: #fefefe;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    padding: 25px;
-    text-align: center;
-  }
-  
-  .header-with-menu {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .menu-icon {
-    position: relative;
-    cursor: pointer;
-  }
-  
-  .menu-icon i {
-    font-size: 1.5em;
-    color: #2193b0;
-  }
-  
-  .menu-hover {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #ffffff;
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    overflow: hidden;
-    z-index: 100;
-  }
-  
-  .menu-icon:hover .menu-hover {
-    display: block;
-  }
-  
-  .menu-hover a {
-    display: block;
-    padding: 10px 20px;
-    color: #333;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  
-  .menu-hover a:hover {
-    background-color: #f0f0f0;
-  }
-  
-  .details h2 {
-    font-size: 1.5em;
-    font-weight: 600;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .local-time {
-    font-size: 1em;
-    color: #666;
-  }
-  
-  .temperature img {
-    width: 100px;
-    margin-top: 15px;
-    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
-  }
-  
-  .temperature h3 {
-    font-size: 2.5em;
-    color: #2193b0;
-    margin-top: 10px;
-  }
-  
-  .forecast-temp {
-    font-size: 1em;
-    color: #666;
-    margin-top: 10px;
-  }
-  
-  ul {
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    margin-top: 20px;
-    padding: 0;
-  }
-  
-  li {
-    background-color: #2193b0;
-    color: #ffffff;
-    border-radius: 10px;
-    padding: 15px 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-weight: 600;
-    font-size: 0.9em;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  li i {
-    font-size: 1.5em;
-    margin-bottom: 8px;
-  }  
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* Adds a gradient background for a smooth transition effect */
+  background-image: linear-gradient(135deg, #6dd5ed, #2193b0);
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+/* Styles the header with centered text, white color, and increased font size */
+header {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Centers the content within the container div */
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Styles the main content area with a background, rounded corners, and shadow effect */
+main {
+  width: 550px;
+  min-height: 450px;
+  background-color: #fefefe;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  text-align: center;
+}
+
+/* Styles header with a menu by aligning items and adding spacing between elements */
+.header-with-menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Defines a clickable menu icon */
+.menu-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Increases font size and color for the menu icon */
+.menu-icon i {
+  font-size: 1.5em;
+  color: #2193b0;
+}
+
+/* Styles the hidden menu that appears on hover */
+.menu-hover {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 100;
+}
+
+/* Shows the hidden menu when hovering over the menu icon */
+.menu-icon:hover .menu-hover {
+  display: block;
+}
+
+/* Styles individual menu items */
+.menu-hover a {
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Changes background color of menu items on hover */
+.menu-hover a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Styles headings within the details section */
+.details h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Sets font style and color for the local time text */
+.local-time {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Styles the weather icon with shadow and spacing */
+.temperature img {
+  width: 100px;
+  margin-top: 15px;
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
+}
+
+/* Styles the main temperature display */
+.temperature h3 {
+  font-size: 2.5em;
+  color: #2193b0;
+  margin-top: 10px;
+}
+
+/* Styles the forecast temperature text */
+.forecast-temp {
+  font-size: 1em;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Styles an unordered list as a grid with two columns */
+ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 0;
+}
+
+/* Styles individual list items with background color, shadow, and centered text */
+li {
+  background-color: #2193b0;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 15px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  font-size: 0.9em;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sets the icon size within each list item */
+li i {
+  font-size: 1.5em;
+  margin-bottom: 8px;
+}

@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outdoor Activity Suggestions</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="activity.css">
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design for mobile devices -->
+    <title>Outdoor Activity Suggestions</title> <!-- Title of the web page -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="activity.css"> <!-- Link to custom CSS for styling -->
 </head>
 <body>
     <header>
-        <h1>Activities</h1>
+        <h1>Activities</h1> <!-- Main header for the page -->
     </header>
 
-    <div class="container">
+    <div class="container"> <!-- Container for main content -->
         <main>
-            <section class="activity" id="activitySection">
-                <div class="header-with-menu">
-                    <div class="menu-icon">
-                        <i class="fa-solid fa-bars"></i>
-                        <div class="menu-hover">
-                            <a href="index.html">Home</a>
-                            <a href="javascript:void(0)" onclick="seeMoreDetails()">Details</a>
-                            <a href="equipment.html">Equipment</a>
+            <section class="activity" id="activitySection"> <!-- Section for activities -->
+                <div class="header-with-menu"> <!-- Container for menu icon and location header -->
+                    <div class="menu-icon"> <!-- Menu icon section -->
+                        <i class="fa-solid fa-bars"></i> <!-- Hamburger icon for the menu -->
+                        <div class="menu-hover"> <!-- Dropdown menu for navigation -->
+                            <a href="index.html">Home</a> <!-- Link to the home page -->
+                            <a href="javascript:void(0)" onclick="seeMoreDetails()">Details</a> <!-- Link to see more details (JavaScript function) -->
+                            <a href="equipment.html">Equipment</a> <!-- Link to the equipment page -->
                         </div>
                     </div>
-                    <h2 id="location">City: --</h2>
+                    <h2 id="location">City: --</h2> <!-- Displays the selected city name -->
                 </div> 
                 
-                <p class="date-time">Date: <span id="date">--</span>, Time: <span id="time">--</span></p>
-                <div id="activityList">
+                <p class="date-time">Date: <span id="date">--</span>, Time: <span id="time">--</span></p> <!-- Displays the selected date and time -->
+                <div id="activityList"> <!-- Placeholder for displaying activities -->
                     <!-- Activities will be displayed here -->
                 </div>
             </section>
         </main>
     </div>
 
-    <script src="activity.js"></script>
+    <script src="activity.js"></script> <!-- Link to JavaScript file for functionality -->
 </body>
 </html>

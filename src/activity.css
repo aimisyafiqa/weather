@@ -1,104 +1,103 @@
 body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(135deg, #6dd5ed, #2193b0);
-    font-family: 'Arial', sans-serif;
-    color: #333;
+    margin: 0; /* Removes default margin */
+    min-height: 100vh; /* Sets minimum height to cover the viewport */
+    display: flex; /* Uses flexbox layout */
+    flex-direction: column; /* Arranges children in a column */
+    align-items: center; /* Centers children horizontally */
+    justify-content: center; /* Centers children vertically */
+    background-image: linear-gradient(135deg, #6dd5ed, #2193b0); /* Sets a gradient background */
+    font-family: 'Arial', sans-serif; /* Sets the font family */
+    color: #333; /* Sets the default text color */
 }
 
 header {
-    text-align: center;
-    color: #ffffff;
-    font-size: 2em;
-    font-weight: 600;
-    margin-bottom: 20px;
+    text-align: center; /* Centers text in the header */
+    color: #ffffff; /* Sets header text color */
+    font-size: 2em; /* Sets font size for header */
+    font-weight: 600; /* Makes header text bold */
+    margin-bottom: 20px; /* Adds space below the header */
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    display: flex; /* Uses flexbox layout for the container */
+    justify-content: center; /* Centers content horizontally */
+    width: 100%; /* Sets width to full */
 }
 
 main {
-    width: 550px;
-    min-height: 450px;
-    background-color: #fefefe;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    padding: 25px;
+    width: 550px; /* Sets width for the main content area */
+    min-height: 450px; /* Sets a minimum height for the main area */
+    background-color: #fefefe; /* Sets background color for the main area */
+    border-radius: 15px; /* Rounds the corners of the main area */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Adds shadow to the main area */
+    padding: 25px; /* Adds padding inside the main area */
 }
 
 .header-with-menu {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    
+    display: flex; /* Uses flexbox for menu header */
+    align-items: center; /* Vertically centers items */
+    gap: 10px; /* Adds space between items */
 }
 
 .menu-icon {
-    position: relative;
-    cursor: pointer;
+    position: relative; /* Sets position for dropdown menu */
+    cursor: pointer; /* Changes cursor to pointer on hover */
 }
 
 .menu-icon i {
-    font-size: 1.5em;
-    color: #2193b0;
+    font-size: 1.5em; /* Sets size of the menu icon */
+    color: #2193b0; /* Sets color of the menu icon */
 }
 
 .menu-hover {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #ffffff;
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    overflow: hidden;
-    z-index: 100;
+    display: none; /* Hides the dropdown menu by default */
+    position: absolute; /* Positions the dropdown menu absolutely */
+    top: 100%; /* Positions it directly below the menu icon */
+    left: 0; /* Aligns it to the left of the menu icon */
+    background-color: #ffffff; /* Sets background color of the dropdown */
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2); /* Adds shadow to dropdown */
+    border-radius: 8px; /* Rounds the corners of the dropdown */
+    overflow: hidden; /* Hides overflow content */
+    z-index: 100; /* Ensures dropdown is above other elements */
 }
 
 .menu-icon:hover .menu-hover {
-    display: block;
+    display: block; /* Displays dropdown menu on hover */
 }
 
 .menu-hover a {
-    display: block;
-    padding: 10px 20px;
-    color: #333;
-    text-decoration: none;
-    font-weight: 500;
+    display: block; /* Makes each link a block element */
+    padding: 10px 20px; /* Adds padding to links */
+    color: #333; /* Sets text color for links */
+    text-decoration: none; /* Removes underline from links */
+    font-weight: 500; /* Sets font weight for links */
 }
 
 .menu-hover a:hover {
-    background-color: #f0f0f0;
+    background-color: #f0f0f0; /* Changes background color on link hover */
 }
 
 .activity h2, .date-time {
-    font-size: 1.2em;
-    color: #333;
-    margin-bottom: 10px;
+    font-size: 1.2em; /* Sets font size for activity headings and date/time */
+    color: #333; /* Sets text color */
+    margin-bottom: 10px; /* Adds space below the headings */
 }
 
 .activity-item {
-    padding: 15px;
-    background-color: #2193b0;
-    color: #ffffff;
-    border-radius: 10px;
-    margin-top: 10px;
-    text-align: center;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    font-weight: 600;
+    padding: 15px; /* Adds padding inside each activity item */
+    background-color: #2193b0; /* Sets background color for activity items */
+    color: #ffffff; /* Sets text color for activity items */
+    border-radius: 10px; /* Rounds the corners of activity items */
+    margin-top: 10px; /* Adds space above each activity item */
+    text-align: center; /* Centers text within activity items */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Adds shadow to activity items */
+    font-weight: 600; /* Makes text in activity items bold */
 }
 
 .activity-item h3 {
-    font-size: 1.2em;
+    font-size: 1.2em; /* Sets font size for activity item headings */
 }
 
 .activity-item p {
-    font-size: 0.9em;
+    font-size: 0.9em; /* Sets font size for activity item descriptions */
 }

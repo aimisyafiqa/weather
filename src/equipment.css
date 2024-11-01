@@ -1,94 +1,94 @@
 body {
-    font-family: Arial, sans-serif;
-    background: #2193b0;
+  font-family: Arial, sans-serif; /* Sets the font for the entire page */
+  background: #2193b0; /* Sets the background color */
 }
 
 .mainWrapper {
-    width: 60%;
-    margin: 100px auto;
-    padding: 2em;
-    background-color: #ffffff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+  width: 60%; /* Sets the width of the main wrapper */
+  margin: 100px auto; /* Centers the wrapper with a top margin */
+  padding: 2em; /* Adds padding inside the wrapper */
+  background-color: #ffffff; /* Sets the background color of the wrapper */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow effect */
+  border-radius: 10px; /* Rounds the corners of the wrapper */
 }
 
 h1 {
-    padding-top: 50px;
-    color: #ffffff;
-    text-align: center;
-    font-size: 2em;
+  padding-top: 50px; /* Adds space above the header */
+  color: #ffffff; /* Sets the header text color */
+  text-align: center; /* Centers the header text */
+  font-size: 2em; /* Sets the font size for the header */
 }
 
 .form-group {
-    margin-bottom: 1.5em;
+  margin-bottom: 1.5em; /* Adds space below each form group */
 }
 
 label {
-    font-weight: bold;
-    color: #555;
+  font-weight: bold; /* Makes the label text bold */
+  color: #555; /* Sets the label text color */
 }
 
 .form-control {
-    width: 100%;
-    padding: 10px;
-    margin-top: 0.5em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  width: 100%; /* Makes the input field take the full width */
+  padding: 10px; /* Adds padding inside the input field */
+  margin-top: 0.5em; /* Adds space above the input field */
+  border: 1px solid #ccc; /* Sets the border of the input field */
+  border-radius: 4px; /* Rounds the corners of the input field */
 }
 
 .btn {
-    background-color: #2193b0;
-    color: #fff;
-    padding: 0.5em 1.5em;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  background-color: #2193b0; /* Sets the background color of buttons */
+  color: #fff; /* Sets the text color of buttons */
+  padding: 0.5em 1.5em; /* Adds padding inside buttons */
+  border: none; /* Removes default border */
+  border-radius: 4px; /* Rounds the corners of buttons */
+  cursor: pointer; /* Changes cursor to pointer on hover */
 }
 
 .btn:hover {
-    background-color: #6dd5ed;
+  background-color: #6dd5ed; /* Changes background color on hover */
 }
 
 .header-with-menu {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .menu-icon {
-    position: relative;
-    cursor: pointer;
-  }
-  
-  .menu-icon i {
-    font-size: 1.5em;
-    color: #2193b0;
-  }
-  
-  .menu-hover {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #ffffff;
-    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    overflow: hidden;
-    z-index: 100;
-  }
-  
-  .menu-icon:hover .menu-hover {
-    display: block;
-  }
-  
-  .menu-hover a {
-    display: block;
-    padding: 10px 20px;
-    color: #333;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  
-  .menu-hover a:hover {
-    background-color: #f0f0f0;
-  }
+  display: flex; /* Uses flexbox layout */
+  align-items: center; /* Vertically centers items */
+  gap: 10px; /* Adds space between items */
+}
+
+.menu-icon {
+  position: relative; /* Positions the menu icon relative to its normal position */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+.menu-icon i {
+  font-size: 1.5em; /* Sets the size of the menu icon */
+  color: #2193b0; /* Sets the color of the menu icon */
+}
+
+.menu-hover {
+  display: none; /* Hides the dropdown menu by default */
+  position: absolute; /* Positions the dropdown menu absolutely */
+  top: 100%; /* Positions it below the menu icon */
+  left: 0; /* Aligns it to the left of the menu icon */
+  background-color: #ffffff; /* Sets background color of dropdown */
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow to dropdown */
+  border-radius: 8px; /* Rounds the corners of the dropdown */
+  overflow: hidden; /* Hides overflow content */
+  z-index: 100; /* Ensures dropdown is on top of other elements */
+}
+
+.menu-icon:hover .menu-hover {
+  display: block; /* Shows dropdown menu on hover */
+}
+
+.menu-hover a {
+  display: block; /* Makes each link a block element */
+  padding: 10px 20px; /* Adds padding to links */
+  color: #333; /* Sets the text color for links */
+  text-decoration: none; /* Removes underline from links */
+  font-weight: 500; /* Sets the font weight for links */
+}
+
+.menu-hover a:hover {
+  background-color: #f0f0f0; /* Changes background color of links on hover */
+}

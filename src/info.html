@@ -4,37 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather Details</title>
+  
+  <!-- Link to Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Link to external CSS file for styling -->
   <link rel="stylesheet" href="info.css">
 </head>
 <body>
+  
+  <!-- Header section with title -->
   <header>
     <h1>Weather Details</h1>
   </header>
 
   <div class="container">
     <main>
+      
+      <!-- Weather details section -->
       <section class="details" id="weatherDetails">
+        
+        <!-- Header with menu icon and location heading -->
         <div class="header-with-menu">
           <div class="menu-icon">
             <i class="fa-solid fa-bars"></i>
             <div class="menu-hover">
+              <!-- Links to other pages -->
               <a href="index.html">Home</a>
               <a href="activity.html">Activities</a>
               <a href="equipment.html">Equipment</a>
             </div>
           </div>
+          
+          <!-- Displays location name -->
           <h2 id="location">--</h2>
         </div>
         
+        <!-- Local date and time display -->
         <p class="local-time">Local Date: <span id="localTime">--:--</span></p>
         
+        <!-- Temperature display with weather icon and feels-like temperature -->
         <div class="temperature">
           <img src="" alt="Weather Icon" id="weatherIcon">
           <h3><span id="currentTemp">--</span><sup>o</sup>C</h3>
           <p class="forecast-temp">Feels Like: <span id="forecastTemp">--</span><sup>o</sup>C</p>
         </div>
         
+        <!-- Weather details list (wind speed, humidity, rain chance, pressure, and condition) -->
         <ul>
           <li><span>Wind Speed:</span><i class="fa-solid fa-wind"></i><span id="windSpeed">--</span> km/h</li>
           <li><span>Humidity:</span><i class="fa-solid fa-droplet"></i><span id="humidity">--</span>%</li>
@@ -43,9 +59,11 @@
           <li><span>Condition:</span><i class="fa-solid fa-cloud-sun"></i><span id="condition">--</span></li>
         </ul>
       </section>
+      
     </main>
   </div>
   
+  <!-- Link to JavaScript file for handling weather data display -->
   <script src="info.js"></script>
 </body>
 </html>
