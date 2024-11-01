@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Details</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="info.css">
+</head>
+<body>
+  <header>
+    <h1>Weather Details</h1>
+  </header>
+
+  <div class="container">
+    <main>
+      <section class="details" id="weatherDetails">
+        <div class="header-with-menu">
+          <div class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+            <div class="menu-hover">
+              <a href="index.html">Home</a>
+              <a href="activity.html">Activities</a>
+              <a href="equipment.html">Equipment</a>
+            </div>
+          </div>
+          <h2 id="location">--</h2>
+        </div>
+        
+        <p class="local-time">Local Date: <span id="localTime">--:--</span></p>
+        
+        <div class="temperature">
+          <img src="" alt="Weather Icon" id="weatherIcon">
+          <h3><span id="currentTemp">--</span><sup>o</sup>C</h3>
+          <p class="forecast-temp">Feels Like: <span id="forecastTemp">--</span><sup>o</sup>C</p>
+        </div>
+        
+        <ul>
+          <li><span>Wind Speed:</span><i class="fa-solid fa-wind"></i><span id="windSpeed">--</span> km/h</li>
+          <li><span>Humidity:</span><i class="fa-solid fa-droplet"></i><span id="humidity">--</span>%</li>
+          <li><span>Chances of Rain:</span><i class="fa-solid fa-cloud-rain"></i><span id="chanceRain">--</span>%</li>
+          <li><span>Pressure:</span><i class="fa-solid fa-gauge"></i><span id="pressure">--</span> hPa</li>
+          <li><span>Condition:</span><i class="fa-solid fa-cloud-sun"></i><span id="condition">--</span></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+  
+  <script src="info.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outdoor Activity Suggestions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="activity.css">
+</head>
+<body>
+    <header>
+        <h1>Activities</h1>
+    </header>
+
+    <div class="container">
+        <main>
+            <section class="activity" id="activitySection">
+                <div class="header-with-menu">
+                    <div class="menu-icon">
+                        <i class="fa-solid fa-bars"></i>
+                        <div class="menu-hover">
+                            <a href="index.html">Home</a>
+                            <a href="javascript:void(0)" onclick="seeMoreDetails()">Details</a>
+                            <a href="equipment.html">Equipment</a>
+                        </div>
+                    </div>
+                    <h2 id="location">City: --</h2>
+                </div> 
+                
+                <p class="date-time">Date: <span id="date">--</span>, Time: <span id="time">--</span></p>
+                <div id="activityList">
+                    <!-- Activities will be displayed here -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="activity.js"></script>
+</body>
+</html>

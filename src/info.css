@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(135deg, #6dd5ed, #2193b0);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+  }
+  
+  header {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  main {
+    width: 550px;
+    min-height: 450px;
+    background-color: #fefefe;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    text-align: center;
+  }
+  
+  .header-with-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .menu-icon {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .menu-icon i {
+    font-size: 1.5em;
+    color: #2193b0;
+  }
+  
+  .menu-hover {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 100;
+  }
+  
+  .menu-icon:hover .menu-hover {
+    display: block;
+  }
+  
+  .menu-hover a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .menu-hover a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .details h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .local-time {
+    font-size: 1em;
+    color: #666;
+  }
+  
+  .temperature img {
+    width: 100px;
+    margin-top: 15px;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.2));
+  }
+  
+  .temperature h3 {
+    font-size: 2.5em;
+    color: #2193b0;
+    margin-top: 10px;
+  }
+  
+  .forecast-temp {
+    font-size: 1em;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #2193b0;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 15px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    font-size: 0.9em;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  li i {
+    font-size: 1.5em;
+    margin-bottom: 8px;
+  }  

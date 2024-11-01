@@ -1,0 +1,4 @@
+shoes 2
+bag pack 2
+water 2
+bread 3

@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(135deg, #6dd5ed, #2193b0);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+main {
+    width: 550px;
+    min-height: 450px;
+    background-color: #fefefe;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+}
+
+.header-with-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.menu-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-icon i {
+    font-size: 1.5em;
+    color: #2193b0;
+}
+
+.menu-hover {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 100;
+}
+
+.menu-icon:hover .menu-hover {
+    display: block;
+}
+
+.menu-hover a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.menu-hover a:hover {
+    background-color: #f0f0f0;
+}
+
+.activity h2, .date-time {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.activity-item {
+    padding: 15px;
+    background-color: #2193b0;
+    color: #ffffff;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+}
+
+.activity-item h3 {
+    font-size: 1.2em;
+}
+
+.activity-item p {
+    font-size: 0.9em;
+}
